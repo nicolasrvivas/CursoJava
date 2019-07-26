@@ -1,28 +1,29 @@
 import java.util.Scanner;
 
-public class Ejercicio_4 {
+public class Ejercicio_5 {
 
     public static void main(String[] args) {
 
-        Scanner varscanner = new Scanner(System.in);
+        int a = 2;
+        int b = 3;
+        int c = a+1;
+        int d = 6/c;
+        int e = d*4;
+        int f = b-1;
+        int g = b-1;
+        int h = -3 + e - b + f;
+        System.out.println("1ra operacion sumar 1 a la variable a = " + c);
+        System.out.println("2da operacion dividir 6 entre el nuevo valor de a ["+a+"] = " + d);
+        System.out.println("3da operacion multiplicar "+d+" por 4 = " + e);
+        System.out.println("4ta operacion es ==>> -3 +"+e+"-"+g+"b (decrementado en 1");
+        System.out.println("5t0 Rsultado total es ==>>> "+h);
 
-        System.out.print("\n" + " Proporciona numero 1   :  ");
-        int v_numero1 = Integer.parseInt(varscanner.nextLine());
-
-        System.out.print("\n" + " Proporciona numero 2   :  ");
-        int v_numero2 = Integer.parseInt(varscanner.nextLine());
-
-        if (v_numero1 > v_numero2) {
-            System.out.println("v_numero1 es mayor que v_numero2");
-        } else {
-            if (v_numero1 < v_numero2) {
-                System.out.println("v_numero1 es menor que v_numero2");
-            } else {
-                System.out.println("v_numero1 es igual que v_numero2");
-            }
-        }
-        int mayor = (v_numero1 > v_numero2) ? v_numero1 : v_numero2;
-        System.out.println("mayor = " + mayor);
+        System.out.println();
+        int a2 = 2;
+        int b2 = 3;
+        int res = -3 + 6 / ++a2 * 4 - b2-- + b2;
+        System.out.println("res = -3 + 6 / ++a2 * 4 - b2-- + b2");
+        System.out.println("res                   ==>>> " + res);
 
     }
 }

@@ -1,22 +1,20 @@
-public class PasoPorValor {
+public class PasoPorReferencia {
 
     public static void main(String[] args) {
 
-        int x   = 10;
-        imprimir(x);
-        x=15;
-        cabiarValor(x);
-
-        imprimir(x);
-
+       Persona p = new Persona();
+       p.cambiarPersona("Juan");
+       imprimirNombre(p);
+       modificarPersona(p);
+       imprimirNombre(p);
     }
 
-    public static void imprimir(int arg1){
-        System.out.println("arg1 = " + arg1);
+    public static void imprimirNombre(Persona p1){
+        System.out.println("Valor recibido = " + p1.obtenerNombre());
     }
 
-    public static void cabiarValor(int arg2){
-        arg2=20;
+    public static void modificarPersona(Persona arg2){
+        arg2.cambiarPersona("Carlos");
     }
 }
 

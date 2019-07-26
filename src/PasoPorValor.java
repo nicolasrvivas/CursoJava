@@ -1,23 +1,22 @@
-public class Caja_Prueba {
+public class PasoPorValor {
 
     public static void main(String[] args) {
 
-        int operandoAncho    = 6;
-        int operandoAlto      = 2;
-        int operandoProfundo = 2;
+        int x   = 10;
+        imprimir(x);
+        x=15;
+        cabiarValor(x);
 
-        Caja objeto1 = new Caja(operandoAncho,operandoAlto,operandoProfundo);
+        imprimir(x);
 
-        // Imprime los operandos
-        System.out.println("operandoAncho    = " + operandoAncho);
-        System.out.println("operandoAlto     = " + operandoAlto);
-        System.out.println("operandoProfundo = " + operandoProfundo);
+    }
 
-        // Imprime la suma
-        System.out.println("\n objeto1.calculoVolumen() = " + objeto1.calculoVolumen());
+    public static void imprimir(int arg1){
+        System.out.println("arg1 = " + arg1);
+    }
 
-
-
+    public static void cabiarValor(int arg2){
+        arg2=20;
     }
 }
 

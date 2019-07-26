@@ -1,12 +1,21 @@
-import java.util.Scanner;
+public class Aritmetica2 {
 
-public class Aritmetica {
+    int a;
+    int b;
 
-  public int sumar(int a, int b){
+    Aritmetica2() {
 
-      int resultado = a + b;
+    }
 
-      return resultado;
+    Aritmetica2(int arg1, int arg2){
+
+        a = arg1;
+        b = arg2;
+    }
+
+  public int sumar(){
+
+      return a + b;
   }
 }
 

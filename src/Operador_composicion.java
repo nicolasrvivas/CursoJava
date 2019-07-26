@@ -1,19 +1,25 @@
 import java.util.Scanner;
 
-public class Ejercicio_1 {
+public class Operador_composicion {
 
     public static void main(String[] args) {
 
-        Scanner scanner = new Scanner(System.in);
+        int a=3, b=7;
+        int c=a;
 
-        System.out.print("\n"+" Proporciona Título :  ");
-        String v_titulo = scanner.nextLine();
+        a +=1;
+        System.out.println("   a = " + a);
 
-        System.out.print("\n"+" Proporciona Autor :  ");
-        String v_Autor = scanner.nextLine();
+        a += 3;
+        System.out.println("   a = " + a);
 
-        String saludar = "Saludos";
-        System.out.println("\n" + " " + v_titulo + " fue escrito por "+v_Autor);
+        b -=1;
+        System.out.println("   b = " + b);
+
+        // +=, -=, %0
+
+
+
     }
 }
 

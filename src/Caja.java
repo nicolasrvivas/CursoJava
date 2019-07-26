@@ -1,41 +1,25 @@
-public class Aritmetica3 {
+public class Caja {
 
-    int a;
-    int b;
+    int ancho;
+    int alto;
+    int profundo;
 
-    Aritmetica3() {
+    Caja() {
 
     }
 
-    Aritmetica3(int a, int b){
+    Caja(int ancho, int alto, int profundo){
 
-        this.a = a;
-        this.b = b;
+        this.ancho = ancho;
+        this.alto = alto;
+        this.profundo = profundo;
     }
 
-  int sumar(){
-        System.out.println("a = " + a);
-      System.out.println("b = " + b);
-      return a+b;
+  int calculoVolumen(){
+
+      return ancho*alto*profundo;
   }
 
-    int restar(){
-        System.out.println("a = " + a);
-        System.out.println("b = " + b);
-        return a-b;
-    }
-
-    int multiplicar(){
-        System.out.println("a = " + a);
-        System.out.println("b = " + b);
-        return a*b;
-    }
-
-     int dividir(){
-         System.out.println("a = " + a);
-         System.out.println("b = " + b);
-        return a/b;
-    }
 }
 
 

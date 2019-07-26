@@ -1,24 +1,20 @@
-import java.util.Scanner;
-
-public class Operador_composicion {
+public class Operador_precedencia {
 
     public static void main(String[] args) {
 
-        int a=3, b=7;
-        int c=a;
+        int x = 5;
+        int y = 10;
+        int z = ++x + y--;
+        System.out.println("x = " + x);
+        System.out.println("y = " + y);
+        System.out.println("z = " + z);
 
-        a +=1;
-        System.out.println("   a = " + a);
+        System.out.println(" Precedencia de operadores  - revisar tabla de precedencia de operadores");
+        int resultado = 4 + 5 * 6 / 3;
+        System.out.println("reultado = " + resultado);
 
-        a += 3;
-        System.out.println("   a = " + a);
-
-        b -=1;
-        System.out.println("   b = " + b);
-
-        // +=, -=, %0
-
-
+        resultado = (4+5) *(6/3);
+        System.out.println("resultado = " + resultado);
 
     }
 }

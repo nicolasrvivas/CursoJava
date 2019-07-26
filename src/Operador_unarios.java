@@ -1,22 +1,42 @@
-import java.util.Scanner;
-
-public class Operador_composicion {
+public class Operador_unarios {
 
     public static void main(String[] args) {
 
-        int a=3, b=7;
-        int c=a;
+        // operadores Unarios
+        int a=3;
+        int b=-a;
 
-        a +=1;
-        System.out.println("   a = " + a);
+        System.out.println("b = " + b);
 
-        a += 3;
-        System.out.println("   a = " + a);
+        boolean c = true;
+        boolean d = !c;
 
-        b -=1;
-        System.out.println("   b = " + b);
+        System.out.println("d = " + d);
 
-        // +=, -=, %0
+
+        // operadores de pos-incremento y pre-incremento
+        int e = 3;
+        int f = e++;
+        System.out.println("e = " + e);
+        System.out.println("f = " + f);
+
+        int g = 3;
+        int h = ++g;
+        System.out.println("g = " + g);
+        System.out.println("h = " + h);
+
+        int i = 3;
+        int j = i--;
+        System.out.println("i = " + i);
+        System.out.println("j = " + j);
+
+        int k = 3;
+        int l = --k;
+        System.out.println("k = " + k);
+        System.out.println("l = " + l);
+
+
+
 
 
 

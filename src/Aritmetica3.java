@@ -1,22 +1,41 @@
-public class Aritmetica2 {
+public class Aritmetica3 {
 
     int a;
     int b;
 
-    Aritmetica2() {
+    Aritmetica3() {
 
     }
 
-    Aritmetica2(int arg1, int arg2){
+    Aritmetica3(int a, int b){
 
-        a = arg1;
-        b = arg2;
+        this.a = a;
+        this.b = b;
     }
 
-  public int sumar(){
-
-      return a + b;
+  int sumar(){
+        System.out.println("a = " + a);
+      System.out.println("b = " + b);
+      return a+b;
   }
+
+    int restar(){
+        System.out.println("a = " + a);
+        System.out.println("b = " + b);
+        return a-b;
+    }
+
+    int multiplicar(){
+        System.out.println("a = " + a);
+        System.out.println("b = " + b);
+        return a*b;
+    }
+
+     int dividir(){
+         System.out.println("a = " + a);
+         System.out.println("b = " + b);
+        return a/b;
+    }
 }
 
 

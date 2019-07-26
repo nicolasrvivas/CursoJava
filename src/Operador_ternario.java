@@ -1,27 +1,17 @@
-public class Operador_condicional {
+public class Operador_ternario {
 
     public static void main(String[] args) {
 
-        int a = 3;
-        int valorMin =0, valorMax = 10;
-        boolean b = (a<= valorMin && a>=valorMax);
-        if (b)
-            System.out.println("Esta dentro del rango  = " + a);
-        else
-            System.out.println("Esta dentro del rango  = " + a);
+        int numero = 10;
+        String resultado = (numero % 2 == 0) ? "Numero Par" : "Numero Impar";
+        System.out.println("resultado = " + resultado);
 
-        if (a<= valorMin && a>=valorMax)
-            System.out.println("Esta dentro del rango  = " + a);
-        else
-            System.out.println("Esta dentro del rango  = " + a);
+        boolean resultado2 = (numero % 2 == 0) ? true : false;
 
-        boolean vacaciones = false;
-        boolean diaDescanso = true;
-        if (vacaciones || diaDescanso)
-            System.out.println("Padre asiste a juego de su hijo");
+        if (resultado2)
+            System.out.println("Numero Par");
         else
-            System.out.println("Padre ocupado");
-
+            System.out.println("Numero Impar");
     }
 }
 

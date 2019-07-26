@@ -1,24 +1,27 @@
-public class Caja_Prueba {
+public class Return_Objeto {
 
     public static void main(String[] args) {
 
-        int operandoAncho    = 6;
-        int operandoAlto      = 2;
-        int operandoProfundo = 2;
+        Suma s = crearObjetoSuma();
+        int resultado = s.a + s.b;
+        System.out.println("resultado = " + resultado);
+    }
 
-        Caja objeto1 = new Caja(operandoAncho,operandoAlto,operandoProfundo);
-
-        // Imprime los operandos
-        System.out.println("operandoAncho    = " + operandoAncho);
-        System.out.println("operandoAlto     = " + operandoAlto);
-        System.out.println("operandoProfundo = " + operandoProfundo);
-
-        // Imprime la suma
-        System.out.println("\n objeto1.calculoVolumen() = " + objeto1.calculoVolumen());
-
-
-
+    public static Suma crearObjetoSuma(){
+        Suma s = new Suma(3,4);
+        return s;
     }
 }
+/* Despues de finalizar la Clase principal */
+    class Suma {
+        int a;
+        int b;
+
+        Suma (int a, int b){
+            this.a = a;
+            this.b = b;
+        }
+    }
+
 
 

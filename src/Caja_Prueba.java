@@ -1,28 +1,22 @@
-public class Aritmetica3_Prueba {
+public class Caja_Prueba {
 
     public static void main(String[] args) {
 
-        int operandoA = 6;
-        int operandoB = 2;
+        int operandoAncho    = 6;
+        int operandoAlto      = 2;
+        int operandoProfundo = 2;
 
-        Aritmetica3 objeto1 = new Aritmetica3(operandoA,operandoB);
+        Caja objeto1 = new Caja(operandoAncho,operandoAlto,operandoProfundo);
 
         // Imprime los operandos
-        System.out.println("operandoA = " + operandoA);
-        System.out.println("operandoB = " + operandoB);
+        System.out.println("operandoAncho    = " + operandoAncho);
+        System.out.println("operandoAlto     = " + operandoAlto);
+        System.out.println("operandoProfundo = " + operandoProfundo);
 
         // Imprime la suma
-        System.out.println("\n objeto1.sumar() = " + objeto1.sumar());
+        System.out.println("\n objeto1.calculoVolumen() = " + objeto1.calculoVolumen());
 
 
-        // Imprime la resta
-        System.out.println("\n objeto1-restar() = " + objeto1.restar());
-
-        // Imprime la resta
-        System.out.println("\n objeto1-division() = " + objeto1.dividir());
-
-        // Imprime la resta
-        System.out.println("\n objeto1-multiplicar() = " + objeto1.multiplicar());
 
     }
 }

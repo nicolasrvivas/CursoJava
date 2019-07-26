@@ -1,23 +1,45 @@
-import java.util.Scanner;
-
-public class Operador_composicion {
+public class Operador_relacional_igualdad {
 
     public static void main(String[] args) {
 
-        int a=3, b=7;
-        int c=a;
 
-        a +=1;
-        System.out.println("   a = " + a);
+        int a = 3, b = 2;
+        boolean c = (a==b);
+        System.out.println("c = " + c);
 
-        a += 3;
-        System.out.println("   a = " + a);
+        boolean d = (a!=b);
+        System.out.println("c = " + d);
 
-        b -=1;
-        System.out.println("   b = " + b);
+        String e = "Hola", f = "hola";
+        boolean g = e.equals(f);
+        System.out.println("g = " + g);
 
-        // +=, -=, %0
+        boolean h = (a>=b);
+        System.out.println("h = " + h);
 
+        boolean i = (a<=b);
+
+        if (a % 2 == 0)
+            System.out.println("a = Par");
+        else
+            System.out.println("a = Impar");
+
+        if (b % 2 == 0)
+            System.out.println("b = Par");
+        else
+            System.out.println("b = Impar");
+
+        if (b % 2 != 0)
+            System.out.println("b = Impar");
+        else
+            System.out.println("b = Par");
+
+        int edad = 17;
+        int adulto = 18;
+        if (edad >= adulto)
+            System.out.println("es un adulto , edad = " + edad);
+        else
+            System.out.println("es un menor , edad = " + edad);
 
 
     }

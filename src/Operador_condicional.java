@@ -1,46 +1,26 @@
-public class Operador_relacional_igualdad {
+public class Operador_condicional {
 
     public static void main(String[] args) {
 
-
-        int a = 3, b = 2;
-        boolean c = (a==b);
-        System.out.println("c = " + c);
-
-        boolean d = (a!=b);
-        System.out.println("c = " + d);
-
-        String e = "Hola", f = "hola";
-        boolean g = e.equals(f);
-        System.out.println("g = " + g);
-
-        boolean h = (a>=b);
-        System.out.println("h = " + h);
-
-        boolean i = (a<=b);
-
-        if (a % 2 == 0)
-            System.out.println("a = Par");
+        int a = 3;
+        int valorMin =0, valorMax = 10;
+        boolean b = (a<= valorMin && a>=valorMax);
+        if (b)
+            System.out.println("Esta dentro del rango  = " + a);
         else
-            System.out.println("a = Impar");
+            System.out.println("Esta dentro del rango  = " + a);
 
-        if (b % 2 == 0)
-            System.out.println("b = Par");
+        if (a<= valorMin && a>=valorMax)
+            System.out.println("Esta dentro del rango  = " + a);
         else
-            System.out.println("b = Impar");
+            System.out.println("Esta dentro del rango  = " + a);
 
-        if (b % 2 != 0)
-            System.out.println("b = Impar");
+        boolean vacaciones = false;
+        boolean diaDescanso = true;
+        if (vacaciones || diaDescanso)
+            System.out.println("Padre asiste a juego de su hijo");
         else
-            System.out.println("b = Par");
-
-        int edad = 17;
-        int adulto = 18;
-        if (edad >= adulto)
-            System.out.println("es un adulto , edad = " + edad);
-        else
-            System.out.println("es un menor , edad = " + edad);
-
+            System.out.println("Padre ocupado");
 
     }
 }
